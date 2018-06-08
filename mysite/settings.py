@@ -81,7 +81,13 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mysite',
         'USER': 'root',
-        'PASSWORD': 'xk2011'
+        'PASSWORD': 'xk2011',
+        'OPTIONS': {
+                    'charset': 'utf8mb4',
+                    'init_command': 'SET default_storage_engine=INNODB',
+                },
+        'TEST_CHARSET': 'utf8',
+        'TEST_COLLATION': 'utf8_general_ci',
     }
 }
 
