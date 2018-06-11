@@ -17,9 +17,9 @@ class UserTestCase(TestCase):
         res = c.get('/')
 
         self.assertEqual(res.status_code, 200)
-        self.assertTrue('ok' in res.content.decode('utf-8'))
+        self.assertTrue('fu' in res.content.decode('utf-8'))
 
     def test_name(self):
         user = User.objects.filter(name='asan')
         self.assertEqual(len(user), 1)
-        self.assertEqual(user[0].name, 20)
+        self.assertEqual(user[0].name, 'asan')
