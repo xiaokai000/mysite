@@ -6,4 +6,4 @@ import json
 #@cache_page(600, key_prefix='index', cache='default')
 def index(request):
 
-    return HttpResponse(json.dumps({'msg': 'ok'}))
+    return HttpResponse(json.dumps({'msg': 'fuck'}))
